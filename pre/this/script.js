@@ -11,14 +11,15 @@
 // }
 // obj.func(); //selfobject
 
-// -------------------------------
+// METHOD-1 bind function
 
 // function fn() {
 //     console.log(this);
 //     function abc() {
 //         console.log(this);
 //     }
-//     abc();
+//     let ret = abc.bind(this);
+//     ret();
 
 // }
 
@@ -27,3 +28,5 @@
 //     func: fn
 // }
 // obj.func();
+
+
