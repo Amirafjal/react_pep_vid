@@ -30,3 +30,18 @@
 // obj.func();
 
 
+// METHOD-2 arrow function
+
+function fn() {
+    console.log(this);
+    abc = () => {
+        console.log(this);
+    }
+    abc();
+}
+
+let obj = {
+    name: "amir afjal",
+    func: fn
+}
+obj.func();
